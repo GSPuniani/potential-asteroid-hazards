@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:86c2e0a9c865109241bd8f06be5c48a69e8dc3e2434214e7ea03592359ccd8c7
-size 21
+# Potential Hazardous Asteroids
+<i>ACS 3520: Machine Learning Final Project</i>
+
+In this project, we explore the NASA JPL dataset found here from Kaggle: https://www.kaggle.com/sakhawat18/asteroid-dataset. This dataset contains 45 columns, one of which is a Boolean column called "pha" - potential hazardous asteroids. We treat this as our target, and the rest of the columns can be features. Our target consists of categorical values ("True" or "False"), so we use a classification algorithm. The goal is to classify whether a given asteroid is potentially hazardous or not. With only two possible values for the target, it makes sense to use a linear classifier. However, since we have so many potential features, it is possible that we may need a higher-dimensional decision boundary in order to achieve linear separability. Thus, we build a Support Vector Classifier to predict whether an asteroid poses a potential hazard to Earth.
